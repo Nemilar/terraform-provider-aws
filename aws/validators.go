@@ -1717,7 +1717,7 @@ func validateCognitoUserPoolDomain(v interface{}, k string) (ws []string, errors
 }
 
 func validateDxConnectionBandWidth() schema.SchemaValidateFunc {
-	return validation.StringInSlice([]string{"1Gbps", "10Gbps"}, false)
+	return validation.StringInSlice([]string{"50Mbps", "100Mbps", "200Mbps", "300Mbps", "400Mbps", "500Mbps", "1Gbps", "10Gbps"}, false)
 }
 
 func validateKmsKey(v interface{}, k string) (ws []string, errors []error) {
